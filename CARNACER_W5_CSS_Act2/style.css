@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-size: 36px;
+}
+
+.section {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: black;
+    font-size: 48px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    
+
+
+}
+
+.one {
+    background-color: rgb(255, 88, 88); 
+}
+
+.two {
+    background-color: rgb(88, 88, 255); 
+}
