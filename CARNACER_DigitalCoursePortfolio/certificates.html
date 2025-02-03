@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Noeme Jane S. Carnacer</title>
+    <link rel="stylesheet" href="certificates.css">
+</head>
+<body>
+    <header>
+        <h1>My Certificates</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="toggle-btn">View Certificates</button>
+    </header>
+
+    <section class="certificates-section">
+        <!-- Certificate 1 -->
+        <div class="certificate">
+            <h2>Certificate 1: Foundation of User Eperience (UX) Design</h2>
+            <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 162529.png" alt="Certificate 1" class="certificate-image">
+        </div>
+
+        <!-- Certificate 2 (2 Images) -->
+        <div class="certificate">
+            <h2>Certificate 2: API JAVA CODING WORKSHOP & PROGRAMMING IN PYTHON</h2>
+            <div class="certificate-gallery">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 175322.png" alt="Certificate 2 Image 1" class="certificate-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 181204.png" alt="Certificate 2 Image 2" class="certificate-image">
+            </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate">
+            <h2>Certificate 3: UI/UX Design</h2>
+            <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 162511.png" alt="Certificate 3" class="certificate-image">
+        </div>
+    </section>
+
+    <footer>
+        <p>CERTIFICATES</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const certificatesSection = document.querySelector('.certificates-section');
+
+        toggleBtn.addEventListener('click', () => {
+            certificatesSection.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(22, 189, 7);
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1e7e34;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background-color: #00440b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgb(253, 4, 4);
+}
+
+.toggle-btn:hover {
+    background-color: #00a116;
+}
+
+/* Certificates Section */
+.certificates-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+    background-color: rgb(0, 0, 0);
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px rgb(73, 0, 245);
+}
+
+.certificates-section.active {
+    max-height: 2000px; /* Adjust if needed */
+    transition: max-height 0.6s ease-in;
+}
+
+/* Certificate Card Styles */
+.certificate {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Certificate Image Styles */
+.certificate-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin: 10px 0;
+}
+
+/* Image Hover Effect */
+.certificate-image:hover {
+    transform: scale(1.05);
+}
+
+/* Certificate Gallery (for multiple images) */
+.certificate-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px rgb(73, 0, 245);
+}

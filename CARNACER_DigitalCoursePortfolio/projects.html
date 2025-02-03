@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio - Noeme Jane S. Carnacer</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="toggle-btn">View Projects</button>
+    </header>
+
+    <section class="projects-section">
+        <div class="project">
+            <h2>Project 1: C# - MediCheck: A Campus-based Clinic Medicine Availability and Reservation System</h2>
+            <div class="project-gallery">
+                <img src="\CARNACER_DigitalCoursePortfolio\475152169_2012217195966375_8324543857948131933_n.jpg" alt="Project 1 Image 1" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 172606.png" alt="Project 1 Image 2" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 172912.png" alt="Project 1 Image 3" class="project-image">
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Project 2: Java - Santino's Pizza POS System</h2>
+            <div class="project-gallery">
+                <img src="\CARNACER_DigitalCoursePortfolio\b2627f8b-58a2-477f-957b-a8b147a88b56.jpg" alt="Project 2 Image 1" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\9c12d8dc-d1c4-402d-8fcd-a1efb542fbe6.jpg" alt="Project 2 Image 2" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\758d3270-dcdd-4f59-b3aa-4e520b83c846.jpg" alt="Project 2 Image 3" class="project-image">
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Project 3: Others - Uplift;U & HTML</h2>
+            <div class="project-gallery">
+                <img src="\CARNACER_DigitalCoursePortfolio\21e2fcfe-a57e-4ec6-9204-b9bd58f5b66f.jpg" alt="Project 3 Image 1" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 194222.png" alt="Project 3 Image 2" class="project-image">
+                <img src="\CARNACER_DigitalCoursePortfolio\Screenshot 2025-02-03 194208.png" alt="Project 3 Image 3" class="project-image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>PROJECTS</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const projectsSection = document.querySelector('.projects-section');
+
+        toggleBtn.addEventListener('click', () => {
+            projectsSection.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
