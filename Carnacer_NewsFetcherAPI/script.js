@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '33854ade40f94289ab40c82d6283b57a'; // Replace with your NewsAPI.org API key
+    const apiKey = '33854ade40f94289ab40c82d6283b57a'; 
     const newsContainer = document.getElementById('news-container');
 
-    // Function to fetch news articles
     async function fetchNews() {
         try {
             const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to display news articles
     function displayNews(articles) {
         newsContainer.innerHTML = '';
 
@@ -36,6 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fetch news on page load
     fetchNews();
 });
