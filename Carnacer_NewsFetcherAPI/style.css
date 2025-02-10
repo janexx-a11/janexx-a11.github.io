@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ff0000;
+    background-color: #eedfdf;
 }
 
 .container {
@@ -14,14 +14,24 @@ body {
 h1 {
     text-align: center;
     margin-top: 20px;
+    font-size: 300%;
+    color: #000000;
 }
 
 .news-article {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f70f0f;
+    margin: 20px auto; /* Centers the box horizontally */
+    padding: 20px; /* Keeps spacing inside the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1100px; /* Keeps width under control */
+    width: 100%; /* Ensures responsiveness */
+}
+
+.news-article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.986);
 }
 
 .news-article h2 {
@@ -33,7 +43,7 @@ h1 {
 }
 
 .news-article a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -41,16 +51,23 @@ h1 {
     text-decoration: underline;
 }
 
-.news-article {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.logo-box {
+    position: absolute;
+    top: 50px; /* Distance from the top */
+    left: 50px; /* Distance from the right */
+    width: 200px; /* Adjust box size */
+    height: 100px; /* Adjust box size */
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-.news-article:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(0, 0, 0);
+.logo-box img {
+    max-width: 100%; /* Ensures the image fits */
+    max-height: 200%;
+    object-fit: contain;
 }
