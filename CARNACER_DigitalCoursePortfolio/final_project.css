@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(22, 189, 7);
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00a116;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 20px;
+    background-image: url('https://i.pinimg.com/originals/ac/7e/1b/ac7e1bf529836aaefdbae2c5f5adeba5.gif');
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(253, 4, 4);
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50%;
+}
+
+/* Project Image Styles */
+.project-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Images */
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px rgb(253, 4, 4);
+}
+
+/* GitHub Button Styles */
+.github-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.github-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(253, 4, 4);
+}
